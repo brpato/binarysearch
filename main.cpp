@@ -12,7 +12,7 @@ Test at least five searches, including: first element, last element, middle elem
 For the recursive version, write and explain the recurrence T(n) = T(n/2) + O(1) and connect it to O(log n).
 Compare binary search to a linear search on the same data.*/
 
-pair<int, int> ibs(vector<int> nums, int tar){
+pair<int, int> ibs(vector<int> nums, int tar){ //iterative binary search
     int low = 0;
     int high = nums.size() - 1;
     int counter = 0;
@@ -32,7 +32,7 @@ pair<int, int> ibs(vector<int> nums, int tar){
     return {-1, counter};
 }
 
-pair<int,int> rbs(vector<int> nums, int tar, int low, int high, int counter){
+pair<int,int> rbs(vector<int> nums, int tar, int low, int high, int counter){ //recursive binary search
     int mid = (low + high) / 2;
     if(low > high){
         return {-1, counter};
@@ -47,7 +47,7 @@ pair<int,int> rbs(vector<int> nums, int tar, int low, int high, int counter){
     return {mid, counter};
 }
 
-pair<int,int> linearS(vector<int> nums, int tar){
+pair<int,int> linearS(vector<int> nums, int tar){ //linear search
     int counter = 0;
     for(int i = 0; i < static_cast<int>(nums.size()); ++i){
         counter++;
