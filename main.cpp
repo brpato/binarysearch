@@ -78,6 +78,6 @@ int main() {
             value = to_string(tests[i][iRes.first]);
         }
 
-        cout<< "test case: " << i + 1 << " target value: " << tars[i] << endl << " iterative:" << endl << "  index: " << iRes.first << " value: " << value << " counter: " << iRes.second << endl << " recursive:" << endl << "  index: " << rRes.first << " value: " << value << " counter: " << rRes.second << endl << " linear:" << endl << "  index: " << lRes.first << " value: " << value << " counter: " << lRes.second << endl;
+        cout<< "test case: " << i + 1 << " target value: " << tars[i] << endl << " iterative:" << endl << "  index: " << iRes.first << " value: " << value << " counter: " << iRes.second << endl << " recursive:" << endl << "  index: " << rRes.first << " value: " << value << " counter: " << rRes.second << endl << " linear:" << endl << "  index: " << lRes.first << " value: " << value << " counter: " << lRes.second << "\n\n";
     }
 }
